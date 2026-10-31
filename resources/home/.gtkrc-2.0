@@ -1,0 +1,5 @@
+gtk-theme-name = "catppuccin-mocha-lavender-standard+default"
+gtk-icon-theme-name = "Colloid-Catppuccin-Dark"
+gtk-cursor-theme-name = "catppuccin-mocha-lavender-cursors"
+gtk-cursor-theme-size = 24
+gtk-application-prefer-dark-theme = 1

@@ -1,0 +1,5 @@
+plugins fast-syntax-highlighting https://github.com/zdharma-continuum/fast-syntax-highlighting.git
+plugins zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions
+plugins zsh-completions https://github.com/zsh-users/zsh-completions.git
+plugins zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting.git
+themes powerlevel10k https://github.com/romkatv/powerlevel10k.git

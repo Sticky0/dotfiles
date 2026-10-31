@@ -1,0 +1,78 @@
+/* Catppuccin Mocha - Wofi */
+* {
+  font-size: 18px;
+}
+window {
+  background-color: transparent;
+}
+#scroll {
+  background-color: transparent;
+}
+#outer-box {
+  background-color: rgba(255, 255, 255, 0.10);
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 24px;
+}
+#main {
+  background-color: transparent;
+}
+scrollbar,
+scrollbar trough,
+undershoot.top,
+undershoot.bottom {
+  min-width: 5px;
+  min-height: 5px;
+  background: none;
+}
+scrollbar slider{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#outer-box {
+  padding: 10px;
+}
+
+#input image {
+  color: #ffffff;
+  -gtk-icon-effect: none;
+}
+#input {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  caret-color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 12px;
+  margin: 10px;
+  border-radius: 35px;
+  outline: none;
+}
+#input:focus {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+#input placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#entry {
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 16px;
+}
+#entry #entry:selected {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+#entry:selected {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+#entry:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+#text {
+  color: #ffffff;
+}
+#text:selected {
+  color: #ffffff;
+}
+
+

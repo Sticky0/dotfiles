@@ -1,0 +1,32 @@
+{
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "",
+    "states": {
+      "warning": 40,
+      "critical": 75
+    },
+    "format-icons": {
+      "headphone": "󰋋",
+      "headset": "󰋋",
+      "hands-free": "󰋋",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "kitty -e wiremix",
+    "tooltip-format": "Output: {volume}%"
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "",
+    "format-source-muted": ""
+  },
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+  }
+}

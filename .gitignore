@@ -1,0 +1,15 @@
+# Nunca subir secretos ni estado local
+.env*
+*.pem
+*.key
+id_*
+.git-credentials
+.npmrc
+auth.json
+mcp-auth.json
+models.json*
+*.bak*
+*.backup*
+__pycache__/
+.zshrc.local
+.zsh_history

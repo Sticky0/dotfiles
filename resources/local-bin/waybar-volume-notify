@@ -1,0 +1,35 @@
+#!/bin/bash
+set -euo pipefail
+
+icon_dir=$HOME/.config/dunst/icons
+
+case "${1:-}" in
+  up) wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+ ;;
+  down) wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- ;;
+  mute) wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle ;;
+  *) exit 2 ;;
+esac
+
+volume_line=$(wpctl get-volume @DEFAULT_AUDIO_SINK@)
+volume=$(awk '{printf "%d", $2 * 100 + 0.5}' <<< "$volume_line")
+volume=$(( (volume / 5) * 5 ))
+
+if grep -q '\[MUTED\]' <<< "$volume_line"; then
+  volume_icon="$icon_dir/audio-volume-muted.svg"
+  volume_title="Volumen silenciado"
+  volume_value=0
+else
+  if (( volume == 0 )); then
+    volume_icon="$icon_dir/audio-volume-muted.svg"
+  elif (( volume <= 33 )); then
+    volume_icon="$icon_dir/audio-volume-low.svg"
+  elif (( volume <= 66 )); then
+    volume_icon="$icon_dir/audio-volume-medium.svg"
+  else
+    volume_icon="$icon_dir/audio-volume-high.svg"
+  fi
+  volume_title="Volumen"
+  volume_value=$volume
+fi
+
+notify-send -a "Volume" -u low -h string:x-canonical-private-synchronous:volume -h int:value:"$volume_value" -i "$volume_icon" "$volume_title" "$volume_value%"

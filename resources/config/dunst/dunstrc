@@ -1,0 +1,38 @@
+[global]
+# Kitty usa la familia Pango "monospace" a 11 pt por defecto.
+font = monospace 15
+
+# Apariencia moderna: más espacio, ancho cómodo y esquinas redondeadas.
+width = (360, 520)
+padding = 14
+horizontal_padding = 18
+text_icon_padding = 14
+corner_radius = 18
+corners = all
+frame_width = 1
+separator_height = 0
+line_height = 2
+
+# Mostrar el icono/imagen que envía cada aplicación, con fallback al tema instalado.
+icon_position = left
+icon_theme = Adwaita
+min_icon_size = 48
+max_icon_size = 72
+enable_recursive_icon_lookup = true
+
+frame_color = "#ffffff66"
+separator_color= frame
+highlight = "#ffffff"
+
+[urgency_low]
+background = "#ffffff22"
+foreground = "#ffffff"
+
+[urgency_normal]
+background = "#ffffff22"
+foreground = "#ffffff"
+
+[urgency_critical]
+background = "#ffffff22"
+foreground = "#ffffff"
+frame_color = "#fab387"

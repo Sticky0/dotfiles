@@ -1,0 +1,12 @@
+npm:pi-memory
+npm:pi-web-access
+npm:pi-subagents
+npm:pi-current-time
+npm:pi-caveman
+npm:pi-tool-display
+npm:pi-adaptive-thinking
+npm:pi-execution-time
+npm:@pi-stef/atlassian
+npm:@juicesharp/rpiv-ask-user-question
+npm:pi-interrupt-steer
+npm:omniroute-agent-extension

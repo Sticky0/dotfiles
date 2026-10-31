@@ -1,0 +1,16 @@
+#!/bin/bash
+set -euo pipefail
+
+icon_path=$HOME/.config/dunst/icons/display-brightness.svg
+
+case "${1:-}" in
+  up) brightnessctl -n2 set 5%+ >/dev/null ;;
+  down) brightnessctl -n2 set 5%- >/dev/null ;;
+  *) exit 2 ;;
+esac
+
+brightness_line=$(brightnessctl -m)
+brightness=$(awk -F, '{gsub(/%/, "", $4); printf "%d", $4 + 0.5}' <<< "$brightness_line")
+brightness=$(( (brightness / 5) * 5 ))
+
+notify-send -a "Brightness" -u low -h string:x-canonical-private-synchronous:brightness -h int:value:"$brightness" -i "$icon_path" "Brillo" "$brightness%"

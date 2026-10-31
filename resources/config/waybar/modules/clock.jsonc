@@ -1,0 +1,13 @@
+{
+  "custom/clock": {
+    "exec": "@HOME@/.config/waybar/scripts/clock-calendar.sh",
+    "return-type": "json",
+    "interval": 1,
+    "escape": false,
+    "exec-on-event": false,
+    "signal": 9,
+    "tooltip": true,
+    "on-click": "@HOME@/.config/waybar/scripts/clock-calendar.sh toggle-alt",
+    "on-click-right": "@HOME@/.config/waybar/scripts/clock-calendar.sh toggle-mode"
+  }
+}

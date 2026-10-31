@@ -1,0 +1,11 @@
+[Unit]
+Description=OmniRoute AI Router
+After=network.target
+
+[Service]
+ExecStart=@HOME@/.local/bin/omniroute
+Restart=on-failure
+Environment=PORT=20128
+
+[Install]
+WantedBy=default.target

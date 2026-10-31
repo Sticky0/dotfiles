@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=NetworkManager Applet (disabled)
+Exec=nm-applet
+Hidden=true
+X-GNOME-Autostart-enabled=false
