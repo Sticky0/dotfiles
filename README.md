@@ -4,6 +4,9 @@ Mi escritorio en Arch Linux + Hyprland, tema Catppuccin Mocha "glass".
 
 ![Escritorio](resources/img/looks/looks.png)
 ![Firefox](resources/img/looks/looks_3.png)
+![Neovim](resources/img/looks/looks_nvim.png)
+![Yazi](resources/img/looks/looks_yazi.png)
+![Notificaciones](resources/img/looks/looks_dunst.png)
 
 ## Qué incluye
 

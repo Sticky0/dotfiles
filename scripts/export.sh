@@ -12,7 +12,7 @@ CONFIG_FILES=(mimeapps.list user-dirs.dirs)
 HOME_FILES=(.p10k.zsh .gtkrc-2.0 .makepkg.conf)
 LOCAL_BIN=(pfetch waybar-brightness-notify waybar-volume-notify)
 ETC_FILES=(sddm.conf.d/theme.conf systemd/zram-generator.conf)
-LOOKS=(looks.png looks_3.png)
+LOOKS=(looks.png looks_3.png looks_nvim.png looks_yazi.png looks_dunst.png)
 
 log() { printf '\033[1;34m==>\033[0m %s\n' "$*"; }
 
