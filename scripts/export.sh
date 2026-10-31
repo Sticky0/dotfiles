@@ -9,7 +9,7 @@ FORBIDDEN_FILE="${DOTFILES_FORBIDDEN:-$HOME/.config/dotfiles/forbidden}"
 
 CONFIG_DIRS=(hypr waybar kitty nvim wofi dunst yazi Kvantum gtk-3.0 gtk-4.0 nwg-look nwg-displays autostart systemd)
 CONFIG_FILES=(mimeapps.list user-dirs.dirs)
-HOME_FILES=(.p10k.zsh .gtkrc-2.0)
+HOME_FILES=(.p10k.zsh .gtkrc-2.0 .makepkg.conf)
 LOCAL_BIN=(pfetch waybar-brightness-notify waybar-volume-notify)
 ETC_FILES=(sddm.conf.d/theme.conf systemd/zram-generator.conf)
 LOOKS=(looks.png looks_3.png)

@@ -14,6 +14,7 @@ efibootmgr
 fastfetch
 firefox
 git
+git-lfs
 grim
 grub
 gst-plugin-pipewire

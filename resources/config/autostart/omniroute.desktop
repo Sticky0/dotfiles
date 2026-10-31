@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=OmniRoute
-Comment=Inicia el servidor local de OmniRoute al iniciar la sesión
-Exec=@HOME@/.local/bin/omniroute --no-open
-TryExec=@HOME@/.local/bin/omniroute
-Terminal=false
-Hidden=false
-X-GNOME-Autostart-enabled=true
